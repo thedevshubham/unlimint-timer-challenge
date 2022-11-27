@@ -1,0 +1,26 @@
+.app {
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-wrap: wrap;
+    @media (max-width: 530px) {
+      flex-direction: column;
+    }
+  }
+  &__left-child {
+    flex-grow: 0.2;
+  }
+  &__right-child {
+    position: relative;
+  }
+  &__right-heading {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+  &__right-input-error {
+    color: red;
+    font-size: 14px;
+  }
+}
